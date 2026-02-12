@@ -28,16 +28,16 @@
   git clone git@github.com:rnaks1m/transport-catalogue.git
   ```
 2. **Конфигурация**
-  Из корня проекта выполните:
-  ```
-  mkdir build
-  cd build
-  cmake .. -DCMAKE_BUILD_TYPE=Release   # или Debug
-  ```
-  Для Windows (MSVC) при необходимости укажите генератор:
-  ```
-  cmake .. -G "Visual Studio 17 2022" -A x64
-  ```
+      Из корня проекта выполните:
+      ```
+      mkdir build
+      cd build
+      cmake .. -DCMAKE_BUILD_TYPE=Release   # или Debug
+      ```
+      Для Windows (MSVC) при необходимости укажите генератор:
+      ```
+      cmake .. -G "Visual Studio 17 2022" -A x64
+      ```
 3. **Компиляция**
   ```
   cmake --build .
