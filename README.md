@@ -21,27 +21,28 @@
 ## Сборка проекта
 Сборка выполняется через **CMake**. Рекомендуется использовать отдельную папку для сборки.
 
-1. **Клонируйте репозиторий** (или распакуйте архив с исходным кодом).
+### 1. Клонируйте репозиторий (или распакуйте архив с исходным кодом).
+В папке, где хотите разместить проект, введите команду
+```
+git clone git@github.com:rnaks1m/transport-catalogue.git
+```
 
-  В папке, где хотите разместить проект, введите команду
-  ```
-  git clone git@github.com:rnaks1m/transport-catalogue.git
-  ```
-2. **Конфигурация**
-      Из корня проекта выполните:
-      ```
-      mkdir build
-      cd build
-      cmake .. -DCMAKE_BUILD_TYPE=Release   # или Debug
-      ```
-      Для Windows (MSVC) при необходимости укажите генератор:
-      ```
-      cmake .. -G "Visual Studio 17 2022" -A x64
-      ```
-3. **Компиляция**
-  ```
-  cmake --build .
-  ```
+### 2. Конфигурация
+Из корня проекта выполните:
+```
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release   # или Debug
+```
+Для Windows (MSVC) при необходимости укажите генератор:
+```
+cmake .. -G "Visual Studio 17 2022" -A x64
+```
+
+### 3. Компиляция
+```
+cmake --build .
+```
 После успешной сборки в папке `build` появится исполняемый файл:
 - **Linux / macOS:** `transport_catalogue`
 - **Windows:** `transport_catalogue.exe`
